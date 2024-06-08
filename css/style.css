@@ -1,12 +1,138 @@
-body{
-    width: 900px;
-    background: #c5c5b5;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  font-size: 15px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000 url(../imagens/fundo.png) repeat-x;
+}
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.nav-logo {
+  max-width: 100px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  place-items: center;
+  background: url(../imagens/logo.png) no-repeat center;
+  background-size: 100%;
+  text-indent: -3000px;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ec0301;
+    transition: all 0.3s ease;
 }
 
-#principal{
-    width: 900px;
-    background: rgb(165, 248, 220);
+.link a:hover::after {
+  width: 70%;
 }
-.logo{
-    width: 200px;
+
+.btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #7f0000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: #c60203;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+}
+.blur{
+  position: absolute;
+  box-shadow: 0 0 1000px 50px #ff3716;
+  z-index: -100;
+}
+header{
+  position: relative;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+header .conteudo h4{
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1REM;
+  font-weight: 600;
+}
+header .conteudo h1{
+  color: #fff;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+header .conteudo h1 span{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #fff;
+}
+header .conteudo p{
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+header .imagem{
+  position: relative;
+}
+header .imagem::before{
+  content: "R";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30rem;
+  font-weight: 600;
+  line-height: 20rem;
+  color: #a20103;
+  opacity: 0.2;
+  z-index: -100;
+}
+header .imagem img{
+  max-width: 600px;
+  margin: auto;
 }
