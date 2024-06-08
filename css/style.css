@@ -1,0 +1,12 @@
+body{
+    width: 900px;
+    background: #c5c5b5;
+}
+
+#principal{
+    width: 900px;
+    background: rgb(165, 248, 220);
+}
+.logo{
+    width: 200px;
+}
