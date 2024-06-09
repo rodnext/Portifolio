@@ -249,3 +249,94 @@ section .header{
   background-color: #7f0000;
   border-color: #7f0000;
 }
+
+footer{
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+footer .coluna .logo{
+  max-width: 100px;
+  margin-bottom: 2rem;
+}
+footer .coluna p{
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+footer .coluna .social{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+footer .coluna .social a{
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 7.5px 10px;
+  font-size: 1.25rem;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+footer .coluna .social a:hover{
+  color: #fff;
+  background-color: #7f0000;
+  border-color: #c60203;
+}
+footer .coluna h4{
+  color: #fff;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+footer .coluna > a{
+  display: block;
+  color: #ccc;
+  margin-bottom: 1rem;
+  transition: all 0.3 ease;
+}
+footer .coluna > a:hover{
+  color: #7f0000;
+}
+.copyright{
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (width < 900px){
+  .nav-links{
+    display: none;
+  }
+  header{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  header .imagem{
+    grid-area: 1/1/2/2;
+  }
+  .skills{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .preco{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer{
+    grid-template-columns: 1fr 200px;
+  }
+}
+@media (width < 600px){
+  header .imagem::before{
+    display: none;
+  }
+  .skills{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .preco{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer{
+    grid-template-columns: 1fr 150px;
+  }
+}
