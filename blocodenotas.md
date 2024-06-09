@@ -4,9 +4,10 @@ https://paletadecolores.online/pt/vermelho/
 
 Vermelho forte #7f0000
 um pouco mais fraco #c60203
+
 preto #000
 branco #fff
-cinza #ccc
+cinza #ccc  card #27272a  #323232
 
 html5shiv:
 https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
@@ -16,3 +17,4 @@ fontes:
 
 icones:
 https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css
+site: https://remixicon.com/

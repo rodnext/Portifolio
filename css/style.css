@@ -136,3 +136,116 @@ header .imagem img{
   max-width: 600px;
   margin: auto;
 }
+section .header{
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+.skills{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.skills .card{
+  background-color: #27272a;
+  padding: 1rem;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.features .card:hover{
+  background-color: #323232;
+  border-color: #fff;
+}
+.skills .card span{
+  display: inline-block;
+  background-color: #7f0000;
+  padding: 2px 9px;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  color: #fff;
+  border-radius: 5px; 
+}
+.skills .card h4{
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+
+}
+.skills .card p{
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.skills .card a{
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sklls .card a:hover{
+  color: #c60203;
+}
+.sub-header{
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+.preco{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.preco .card{
+  padding: 3rem 2rem;
+  background-color: #27272a;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.preco .card:hover{
+  background-color: #323232;
+  border-color: #fff;
+}
+.preco .card .conteudo{
+  flex: 1;
+  margin-bottom: 2rem;
+}
+.preco .card h4{
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.preco .card h3{
+  color: #fff;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px dashed #fff;
+}
+.preco .card p{
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.preco .card p i{
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 0.3rem;
+}
+.preco .card button{
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.preco .card button:hover{
+  background-color: #7f0000;
+  border-color: #7f0000;
+}
