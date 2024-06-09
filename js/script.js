@@ -10,13 +10,21 @@ const link2 = document.getElementById("link2");
 const link3 = document.getElementById("link3");
 
 link1.addEventListener('click', () => {
-    scrollToElement('.header');
+    scrollToElement('.nav');
+    fecharMenu();
 });
 
 link2.addEventListener('click', () => {
-    scrollToElement('.header', 1);
+    scrollToElement('.header');
+    fecharMenu();
 });
 
 link3.addEventListener('click', () => {
+    scrollToElement('.header', 1);
+    fecharMenu();
+});
+
+link4.addEventListener('click', () => {
     scrollToElement('.coluna');
+    fecharMenu();
 });
