@@ -1,4 +1,4 @@
-Site Portifólio <h3>Rodnext</h3><br>
+Site Portifólio <h3>Leonardo Rodrigues</h3><br>
 <p>Esse site eu fiz para ficar online.<br>
 Mostrando um pouco do meu conhecimento,<br>
 algumas habilidades e dizendo um pouco sobre mim.<br></p>
